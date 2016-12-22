@@ -28,7 +28,7 @@ $(document).ready(function($){
     setTimeout(function(){
       textSize = $('.homeh1').css('font-size');
       $('.homeh1').html('TE<br>QUIERO!<br>TI AMO!<br>I LOVE<br>YOU!');
-      $('.homeh1').css('font-size', '10rem');
+      $('.homeh1').css('font-size', '8rem');
       $('#button').hide();
       modalWindow.addClass('visible');
     }, delay);
