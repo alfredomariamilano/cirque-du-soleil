@@ -27,7 +27,7 @@ $(document).ready(function($){
     var delay = ( $('.no-cssanimations').length > 0 ) ? 0 : 600;
     setTimeout(function(){
       textSize = $('.homeh1').css('font-size');
-      $('.homeh1').text('TI AMO!');
+      $('.homeh1').html('TE QUIERO!<br>TI AMO!<br>I LOVE YOU!');
       $('.homeh1').css('font-size', '10rem');
       $('#button').hide();
       modalWindow.addClass('visible');
@@ -40,11 +40,12 @@ $(document).ready(function($){
 
     $('.homeh1').animate({
       fontSize: textSize
-    }, 10000, function() {
-      $('#button').fadeIn(1000);
+    }, 5000, function() {
       $('.homeh1').fadeOut(function() {
-        $(this).text('Buon Natale principessa!')
-      }).fadeIn();
+        $(this).text('Buongiorno principessa!');
+      }).fadeIn(function() {
+        $('#button').fadeIn(1000);
+      });
     });
 
     transitionLayer.addClass('closing');
