@@ -137,6 +137,7 @@ Modal window
   margin: .2em auto 0;
 }
 .cd-modal p {
+  text-align: center;
   line-height: 1.6;
   margin: 2em auto;
   max-width: 800px;
