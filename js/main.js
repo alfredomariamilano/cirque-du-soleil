@@ -23,13 +23,13 @@ $(document).ready(function($){
   //open modal window
   modalTrigger.on('click', function(event){
     event.preventDefault();
-    $('.homeh1').text('TI AMO!');
-    textSize = $('.homeh1').css('font-size');
-    $('.homeh1').css('font-size', '15rem');
-    $('#button').hide();
     transitionLayer.addClass('visible opening');
     var delay = ( $('.no-cssanimations').length > 0 ) ? 0 : 600;
     setTimeout(function(){
+      textSize = $('.homeh1').css('font-size');
+      $('.homeh1').text('TI AMO!');
+      $('.homeh1').css('font-size', '10rem');
+      $('#button').hide();
       modalWindow.addClass('visible');
     }, delay);
   });
