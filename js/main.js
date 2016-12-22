@@ -27,7 +27,7 @@ $(document).ready(function($){
     var delay = ( $('.no-cssanimations').length > 0 ) ? 0 : 600;
     setTimeout(function(){
       textSize = $('.homeh1').css('font-size');
-      $('.homeh1').html('TE QUIERO!<br>TI AMO!<br>I LOVE YOU!');
+      $('.homeh1').html('TE<br>QUIERO!<br>TI AMO!<br>I LOVE<br>YOU!');
       $('.homeh1').css('font-size', '10rem');
       $('#button').hide();
       modalWindow.addClass('visible');
